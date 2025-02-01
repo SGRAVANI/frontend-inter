@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from "react";
+import { endpoint } from "../data";
 
 function Education() {
   const [edata, setEdata] = useState([]);
 
   async function getData() {
     try {
-      let res = await fetch(`http://localhost:3000/user/education`);
+      let res = await fetch(`${endpoint}/user/education`);
       let data = await res.json();
       setEdata(data.data);
       console.log(data.data);

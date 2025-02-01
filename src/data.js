@@ -1,2 +1,2 @@
-let endpoint="https://bacend-intr.onrender.com"
+let endpoint="https://bacend-intr-1.onrender.com"
 export {endpoint}
