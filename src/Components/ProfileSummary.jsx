@@ -24,7 +24,7 @@ function ProfileSummary() {
 
   return (
     <div className="max-w-md w-full mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl text-center">
-        {loading?<div>data is loading...</div>:<>
+        {loading?<div className="text-center">data is loading...</div>:<>
       <div className="mb-4">
         <img
           src={pdata.img}

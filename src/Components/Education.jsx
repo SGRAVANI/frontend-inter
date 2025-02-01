@@ -25,7 +25,7 @@ function Education() {
   return (
     <div className="mx-auto mt-10 max-w-4xl px-4">
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">Education Details</h2>
-      {loading?<div>data is loading...</div>:
+      {loading?<div className="text-center">data is loading...</div>:
       <div className="overflow-x-auto rounded-xl shadow-lg">
         <table className="w-full border-collapse text-left text-sm">
           {/* Table Header */}
