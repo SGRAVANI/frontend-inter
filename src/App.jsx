@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import Header from "./Components/Header"
-import { Routes,Route } from "react-router-dom"
+import { Routes,Route, Outlet } from "react-router-dom"
 import Skills from "./Components/Skills"
 import Certificates from "./Components/Certificates"
 import Education from "./Components/Education"
@@ -11,11 +11,13 @@ function App() {
   return (
     <div >
     <Header/>
-    <ProfileSummary/>
+    <Outlet/>
+    
     <div className="px-10 md:px-30 mx-auto">
     
     </div>
     <Routes>
+      <Route path="/" element={<ProfileSummary/>} />
       <Route path="/skills" element={<Skills/>} />
       <Route path="/cert" element={<Certificates/>} />
       <Route path="education" element={<Education/>} />
