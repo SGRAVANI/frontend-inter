@@ -2,7 +2,7 @@ import React from 'react'
 
 function Certificates() {
   return (
-    <div>Certificates</div>
+    <div className='mt-50 text-center'>Certificates</div>
   )
 }
 
